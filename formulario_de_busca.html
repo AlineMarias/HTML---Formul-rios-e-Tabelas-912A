@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Animais</title>
+    <link rel="stylesheet" href="formulariodebusca.css">
+</head>
+<body>
+    <h1>Busque por seu animalzinho</h1>
+    <form action="tabela_de_infos.html" method="GET">
+        <label for="nome">Nome do Animal:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="tipo">Tipo de Animal:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+            <option value="outro">Outro</option>
+        </select>
+        
+        <label for="data_entrada">Data de Entrada:</label>
+        <input type="date" id="data_entrada" name="data_entrada" required>
+
+        <div class="informacoes_dono">
+            <h2>Informações sobre o Dono:</h2>
+            <label for="nome_dono">Nome do Dono:</label>
+            <input type="text" id="nome_dono" name="nome_dono" required>
+            
+            <label for="contato_dono">Contato do Dono:</label>
+            <input type="text" id="contato_dono" name="contato_dono" required>
+            
+            <label for="endereco_dono">Endereço do Dono:</label>
+            <input type="text" id="endereco_dono" name="endereco_dono" required>
+        </div>
+
+        <label for="possibilidade_saida">Possibilidade de Saída:</label>
+        <select id="possibilidade_saida" name="possibilidade_saida" required>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+        
+        <button type="submit">Buscar</button>
+    </form>
+</body>
+</html>
